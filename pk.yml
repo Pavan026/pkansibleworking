@@ -1,8 +1,3 @@
 ---
 - hosts: all
   become: yes
-  tasks:
-  - name: stop service
-    service:
-      name: instance
-      state: stop
