@@ -10,7 +10,7 @@
 
   - name: i want to start webserver on redhat
     service:
-     name: "{linkux}"
+     name: "{{linkux}}"
      state: started
     when: ansible_os_family =="RedHat"
 
