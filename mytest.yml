@@ -6,8 +6,8 @@
     file:
      path: /home/pavan/mytestfile
      state: touchss
-     ignore_errors: yes
-     
+    ignore_errors: yes
+
   - name: i want to install webserver on redhat
     yum:
      name: "{{linux}}"
