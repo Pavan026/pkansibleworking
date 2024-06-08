@@ -6,6 +6,6 @@
    state: present
 
 - name: i want to start webserver on redhat  
-  yum:
+  sercice:
    name: httpd
    state: started
