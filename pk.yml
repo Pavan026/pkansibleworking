@@ -4,13 +4,13 @@
   tasks:
   - name: i want to install webserver on redhat
     yum:
-     name: httpd
+     name: "{{linux}}"
      state: present
     when: ansible_os_family =="RedHat"
 
   - name: i want to start webserver on redhat
     service:
-     name: httpd
+     name: "{{linux}}"
      state: started
     when: ansible_os_family =="RedHat"
 
