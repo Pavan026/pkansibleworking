@@ -6,6 +6,6 @@
    state: present
 
 - name: i want to start webserver on redhat  
-  sercice:
-   name: httpd
-   state: started
+  service:
+     name: httpd
+     state: started
