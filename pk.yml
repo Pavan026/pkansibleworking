@@ -5,8 +5,9 @@
   - name: i want to install webserver on redhat
     yum:
      name: "{{linux}}"
-     state: present
+     state: presentss
     when: ansible_os_family =="RedHat"
+    ignore_errors: yes
 
   - name: i want to start webserver on redhat
     service:
