@@ -2,11 +2,6 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install tree
-    apt:
-     name: tree
-     state: present
-     
   - name: stop service
     service:
       name: instance
