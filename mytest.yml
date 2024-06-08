@@ -12,5 +12,5 @@
   - name: i want to start webserver on redhat
     service:
      name: "{{linux}}"
-     state: stopped
+     state: started
     when: ansible_os_family =="RedHat" 

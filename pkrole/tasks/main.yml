@@ -1,2 +1,11 @@
 ---
 # tasks file for pkrole
+- name: i want to install webserver on redhat
+  yum:
+   name: httpd
+   state: present
+
+- name: i want to start webserver on redhat  
+  yum:
+   name: httpd
+   state: started
