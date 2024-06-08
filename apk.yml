@@ -1,6 +1,5 @@
 ---
-- hosts:
+- hosts: 172.31.3.164
   become: yes
   roles:
   - pkrole
-  
