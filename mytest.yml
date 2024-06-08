@@ -2,12 +2,6 @@
 - hosts: 172.31.3.164 
   become: yes
   tasks:
-  - name: create a file
-    file:
-     path: /home/pavan/mytestfile
-     state: touch
-    ignore_errors: yes
-
   - name: i want to install webserver on redhat
     yum:
      name: "{{linux}}"
