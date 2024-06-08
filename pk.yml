@@ -1,3 +1,9 @@
 ---
 - hosts: all
   become: yes
+  tasks:
+  - name: i want to make webserver
+    yum:
+     name: httpd
+     state: present
+     
