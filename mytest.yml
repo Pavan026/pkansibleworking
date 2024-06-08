@@ -5,5 +5,18 @@
   - name: create a file
     file:
      path: /home/pavan/mytestfile
-     state: touch
+     state: touchss
+     ignore_errors: yes
      
+  - name: i want to install webserver on redhat
+    yum:
+     name: "{{linux}}"
+     state: presents
+    when: ansible_os_family =="RedHat"
+    ignore_errors: yes
+
+  - name: i want to start webserver on redhat
+    service:
+     name: "{{linux}}"
+     state: started
+    when: ansible_os_family =="RedHat"  

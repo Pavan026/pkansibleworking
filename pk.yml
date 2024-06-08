@@ -2,16 +2,6 @@
 - hosts: all
   become: yes
   tasks:
-  - name: i want to install webserver on redhat
-    yum:
-     name: "{{linux}}"
-     state: presentss
-    when: ansible_os_family =="RedHat"
-    ignore_errors: yes
-
-  - name: i want to start webserver on redhat
-    service:
-     name: "{{linux}}"
-     state: started
-    when: ansible_os_family =="RedHat"
+  - include_tasks: mytest.yml
+  
 
