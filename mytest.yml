@@ -5,7 +5,7 @@
   - name: create a file
     file:
      path: /home/pavan/mytestfile
-     state: touchs
+     state: touch
     ignore_errors: yes
 
   - name: i want to install webserver on redhat
